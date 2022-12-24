@@ -12,6 +12,7 @@ function Avanza (avanzar_: boolean) {
 function Retroceder (avanzar_: boolean) {
     pins.digitalWritePin(DigitalPin.P8, 1)
     pins.digitalWritePin(DigitalPin.P12, 1)
+    basic.pause(500)
     maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CCW, 154)
 }
 function Gira_I (avanzar_: boolean) {
